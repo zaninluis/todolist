@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    outline: none;
+}
+
+body{
+    background-color: rgb(55, 180, 252);
+}
+
+.container{
+    background-color: rgb(225, 225, 225);
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.input-task{
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.button-add-task{
+    background-color: rgb(62, 97, 186);
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    font: 800;
+}
+
+.button-add-task:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.button-add-task:active{
+    opacity: 0.5;
+}
+
+.list-tasks{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task{
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+img{
+    height: 25px;
+    width: 25px;
+    opacity: 0.05;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+
+.done{
+    background-color: rgb(108, 208, 128);
+    text-decoration: line-through;
+    color: #666666;
+}
+    
